@@ -244,3 +244,7 @@ tab[selected="true"] .tab-background {
   margin-right: 0px !important;
   background-color: black !important;
 }
+
+.tab-throbber {
+  margin-inline-end: 0px !important;
+}
