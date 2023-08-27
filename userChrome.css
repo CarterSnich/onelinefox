@@ -231,3 +231,16 @@ tab[selected="true"] .tab-background {
 .tabbrowser-tab[visuallyselected="true"] .tab-background {
   border-color: rgb(var(--tab-selected-border-color))
 }
+
+
+.tab-icon-stack[indicator-replaces-favicon="true"] .tab-icon-image {
+  opacity: 1 !important;
+
+}
+
+.tab-icon-overlay {
+  left: 5px !important;
+  top: 5px !important;
+  margin-right: 0px !important;
+  background-color: black !important;
+}
