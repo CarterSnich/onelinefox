@@ -6,11 +6,14 @@
   --accent-color: 45, 45, 45;
   --tab-color: 240, 240, 244;
   --tab-text-color: 255, 255, 255;
+  --tab-border-color: 85, 85, 85;
+  --tab-selected-border-color: 170, 170, 172;
+  --tab-close-button-color: 170, 170, 172;
   --secondary-accent-color: 127,127,127;
   --second-tab-text-color: 127,127,127;
   --third-accent-color: 235, 219, 178;
   --light-color: 255, 255, 255;
-  --dark-color: 0, 0, 0;
+  --dark-color: 31, 33, 34;
   --url-back: 249, 249, 251;	
   --caption-min-color: 215, 153, 33;
   --caption-max-color: 69, 133, 136;
@@ -185,7 +188,46 @@ tab[selected="true"] .tab-background {
 .tab-close-button {
   transition: all 0.3s ease !important;
   border-radius: 4px !important;
+  fill: rgb(var(--tab-close-button-color)) !important;
 }
 
-.tabbrowser-tab .tab-label  { color: var(--uc-inverted-colour) !important; }
-.tab-close-button { fill: var(--uc-inverted-colour) !important }
+.tabbrowser-tab .tab-label  {
+  color: var(--uc-inverted-colour) !important;
+}
+
+
+/*================ USER MODIFIED ================*/
+.tabbrowser-tab {
+  flex: unset !important;
+  min-width: unset !important;
+}
+
+.tab-icon-stack {
+  min-width: 16px !important;
+}
+
+.tab-icon-image {
+  margin: 0px !important;
+}
+
+.tab-label-container {
+  display: none !important;
+}
+
+.tab-close-button {
+  display: none !important;
+  margin-left: 5px !important;
+}
+
+.tabbrowser-tab[visuallyselected="true"]:hover .tab-close-button {
+  display: block !important;
+}
+
+.tab-background {
+  border: 1px solid rgb(var(--tab-border-color));
+
+}
+
+.tabbrowser-tab[visuallyselected="true"] .tab-background {
+  border-color: rgb(var(--tab-selected-border-color))
+}
