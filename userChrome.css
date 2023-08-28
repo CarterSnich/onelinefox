@@ -1,7 +1,6 @@
 /*===KeyFox by AlfarexGuy2019===*/ 
 
 /*===COLORS===*/
-
 :root {
   --accent-color: 45, 45, 45;
   --tab-color: 240, 240, 244;
@@ -26,14 +25,11 @@
   visibility: collapse !important;}
 
 /*Basic Settings*/
-
-
 :root {
   --navbarWidth     : 40vw; /* Set width of navbar. Use px for a fixed width 
                                 or vw for a percentage of your window. */
   --animationSpeed  : 0.5s;
 }
-
 
 #TabsToolbar {
   margin-left : var(--navbarWidth) !important;
@@ -225,17 +221,14 @@ tab[selected="true"] .tab-background {
 
 .tab-background {
   border: 1px solid rgb(var(--tab-border-color));
-
 }
 
 .tabbrowser-tab[visuallyselected="true"] .tab-background {
   border-color: rgb(var(--tab-selected-border-color))
 }
 
-
 .tab-icon-stack[indicator-replaces-favicon="true"] .tab-icon-image {
   opacity: 1 !important;
-
 }
 
 .tab-icon-overlay {
