@@ -95,6 +95,16 @@
   border      : none !important;
 }
 
+#urlbar {
+  border: 1px solid rgb(var(--tab-border-color));
+  border-radius: var(--tab-border-radius);
+}
+
+#urlbar[open], #urlbar[focused=true] {
+  --focus-outline: none !important;
+  border: 1px solid rgb(var(--tab-selected-border-color));
+}
+
 #urlbar:not(:hover):not([breakout][breakout-extend]) > #urlbar-background {
   box-shadow  : none !important;
   background  : none !important;
