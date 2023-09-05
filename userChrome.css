@@ -214,6 +214,13 @@ tab[selected="true"] .tab-background {
   color: var(--uc-inverted-colour) !important;
 }
 
+/*================ NOTIFICATION ================*/
+.notificationbox-stack {
+  background-color: transparent !important;
+  position: fixed !important;
+  right: 0 !important;
+  top: 37px !important;
+}
 
 /*================ USER MODIFIED ================*/
 .tabbrowser-tab {
